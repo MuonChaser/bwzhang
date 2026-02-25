@@ -1,0 +1,41 @@
+# Lang: Simplified Chinese (China)
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+# BGN: Date and Time Format
+  [Datetime_format]
+    other = "2006年1月2日"
+# END: Date and Time Format
+
+# BGN: Base
+  [home]
+    other = "首页"
+
+  [categories]
+    one = "分类"
+    other = "分类"
+  [tags]
+    one = "标签"
+    other = "标签"
+
+  [continueReading]
+    other = "阅读全文"
+
+  [next]
+    other = "下一页"
+  [previous]
+    other = "上一页"
+
+  [toc]
+    other = "文章目录"
+# END: Base
+
+# BGN: Theme
+  [ads]
+    other = "福利派送"
+
+  [Articles]
+    other = "中的文章"
+  [Articles_latest]
+    other = "最近文章"
+  [Articles_related]
+    other = "相关文章"

@@ -1,0 +1,32 @@
+/* Basic styles for personal page */
+:root{
+    --max-width:1100px;
+    --accent:#1a73e8;
+    --text:#222;
+}
+*{box-sizing:border-box}
+body{font-family:'Lato', Arial, sans-serif;color:var(--text);line-height:1.6;margin:0;padding:0;background:#fff}
+.fixed-header{background:#f8f9fb;border-bottom:1px solid #e6e9ef;padding:18px 0;position:sticky;top:0;z-index:50}
+.header-content{max-width:var(--max-width);margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 16px}
+.header-left h1{margin:0;font-size:20px;letter-spacing:1px}
+.header-left p{margin:4px 0 0;color:#555}
+.logo{height:56px;width:auto;border-radius:6px}
+nav ul{list-style:none;margin:10px 0 0;padding:0;display:flex;gap:16px}
+nav a{color:var(--text);text-decoration:none;font-weight:600}
+main{max-width:var(--max-width);margin:30px auto;padding:0 16px}
+.about-container{display:flex;gap:30px;align-items:center}
+.about-text{flex:1}
+.about-text h3{margin-top:0}
+.about-photo{width:220px;flex:0 0 220px}
+.profile-pic{width:100%;height:auto;border-radius:6px;border:1px solid #ddd}
+.section-header h2{margin-bottom:8px}
+.publication-list{margin-top:10px}
+.publication-item{margin-bottom:18px}
+.publication-item h3{margin:0 0 6px}
+.content-container{width:70%}
+/* responsive */
+@media (max-width:800px){
+  .about-container{flex-direction:column}
+  .about-photo{width:160px}
+  .header-content{padding:0 12px}
+}

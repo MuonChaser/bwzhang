@@ -5,7 +5,6 @@
  * @version 1.3
  * @link http://pickcho.com
  */
- 
  @font-face {
     font-family: 'icomoon';
     src:url('fonts/icomoon.woff?-i5ysuu') format('woff'),
@@ -13,7 +12,7 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@import url("https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Light/result.css");
 [class^="icon-"], [class*=" icon-"] {
     font-family: 'icomoon';
     font-style: normal;
@@ -26,8 +25,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-/* 引入中文字体 */
-@import url("https://chinese-fonts-cdn.deno.dev/packages/lxgwwenkai/dist/LXGWWenKai-Light/result.css");
 
 .icon-search:before {
     content: "\e601";
@@ -75,7 +72,7 @@ body {
     /**
     font-family:"TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
     **/
-    font-family:  "Iowan Old Style", "Ovo", "Hoefler Text", Georgia, "Times New Roman", "TIBch", "LXGW WenKai Screen","Source Han Sans", "PingFangSC-Regular", "Hiragino Sans GB", "STHeiti", "Microsoft Yahei", "Droid Sans Fallback", "WenQuanYi Micro Hei", sans-serif;
+    font-family: "Iowan Old Style", "Ovo", "Hoefler Text","LXGW WenKai Screen", Georgia, "Times New Roman", "TIBch", "Source Han Sans", "PingFangSC-Regular", "Hiragino Sans GB", "STHeiti", "Microsoft Yahei", "Droid Sans Fallback", "WenQuanYi Micro Hei", sans-serif;
     /**-webkit-font-smoothing: antialiased;**/
     -moz-osx-font-smoothing: grayscale;
 }
@@ -317,41 +314,30 @@ textarea {
 .meta-tags ul a {
     margin-left: 24px;
     padding: 0 10px 0 14px;
-    background: #0089e0;
-    color: #fff;
+    /* border-only style: transparent background, colored border and text */
+    background: transparent;
+    color: #ba3925;
     text-decoration: none;
     border-radius: 2px;
+    border: 1px solid #ba3925;
+    padding-left: 10px; /* reduce left padding since decorative triangle removed */
 }
 .meta-tags ul a:before {
-    content: '';
-    float: left;
-    position: absolute;
-    top: 0;
-    left: -7px;
-    width: 0;
-    height: 0;
-    border-color: transparent #0089e0 transparent transparent;
-    border-style: solid;
-    border-width: 12px 12px 12px 0;
-    transition: all .1s ease-in;
+    /* remove decorative triangle for border-only look */
+    display: none;
 }
 .meta-tags ul a:after {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 0;
-    float: left;
-    width: 4px;
-    height: 4px;
-    border-radius: 2px;
-    background: #fff;
-    box-shadow: -1px -1px 2px #004977;
+    /* remove small decorative dot */
+    display: none;
 }
 .meta-tags ul a:hover {
-    background: #555;
+    /* keep hover subtle for border-only style: change border & text color */
+    background: transparent;
+    color: #555;
+    border-color: #555;
 }
 .meta-tags ul a:hover:before {
-    border-color: transparent #555 transparent transparent;
+    display: none;
 }
 .post-content {
     font-size: 1em;
@@ -924,8 +910,12 @@ img.alignright {
     }
 }
 .post-archive h2 {
-      margin: 0;
-      font: bold 25px / 1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif; 
+    margin: 0;
+    /* Use the site's configured font stack and normal weight instead of forcing a bold system font */
+    font-size: 25px;
+    line-height: 1.1;
+    font-weight: normal;
+    font-family: inherit;
 }
 .post-archive .date {
       padding-right: .7em; 
@@ -992,6 +982,9 @@ img.alignright {
 }
 
 /* read more*/
+.readmore {
+    display: none !important;
+}
 .readmore a {
     font-size: 14px;
     color: #444;
@@ -1132,3 +1125,165 @@ table tbody tr td:nth-of-type(1) pre {
   background-color: #9f9f9f !important; 
 }
   
+/* Sidebar toggle styles */
+.sidebar-toggle {
+    display: inline-block;
+    font-size: 14px;
+    padding: 6px 10px;
+    margin-left: 8px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    color: #444;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+.sidebar-toggle:hover {
+    background: #f8f8f8;
+}
+
+/* Collapsed sidebar state: hide secondary and center main content */
+body.sidebar-collapsed #secondary {
+    display: none !important;
+}
+body.sidebar-collapsed #body .container {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+}
+body.sidebar-collapsed .col-group {
+    display: contents;
+}
+body.sidebar-collapsed #main {
+    float: none !important;
+    margin: 0 !important;
+    width: 800px;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 0;
+}
+
+/* small screens: sidebar already hidden, hide toggle (optional) */
+@media print, screen and (max-width:860px) {
+    /* on small screens the sidebar is hidden by layout; hide the toggle to avoid UI clutter */
+    .sidebar-toggle { display: none; }
+}
+
+/* ensure nav menu buttons align nicely */
+.nav-menu-wrapper { display: inline-block; }
+#nav-menu { display: inline-block; }
+/* Make the toggle look and align like other nav items */
+#nav-menu .sidebar-toggle {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 1em;
+    margin-left: 6px;
+    color: #444;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+#nav-menu .sidebar-toggle:hover {
+    background: transparent;
+    color: #6E7173;
+}
+
+/* Homepage three-column grid layout */
+body.home .res-cons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    grid-auto-rows: max-content;
+}
+
+body.home .res-cons .post {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+    min-height: 0;
+}
+
+body.home .res-cons .post:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.home .res-cons .post header {
+    padding: 20px 20px 0;
+    border-bottom: none;
+    flex-shrink: 0;
+}
+
+body.home .res-cons .post-title {
+    margin: 0 0 15px 0;
+    font-size: 1.2em;
+}
+
+body.home .res-cons .post-content {
+    padding: 0 20px 15px 20px;
+    flex-grow: 1;
+    line-height: 1.6;
+}
+
+/* Post meta - always at bottom */
+body.home .res-cons .post-meta {
+    font-size: 0.9em;
+    border-bottom: none;
+    flex-shrink: 0;
+}
+
+body.home .res-cons .post-meta.meta-date {
+    padding: 0;
+    margin: 0;
+}
+
+body.home .res-cons .post-meta.meta-category {
+    padding: 0;
+    margin: 0;
+}
+
+/* Bottom row container for meta info */
+body.home .res-cons .post::after {
+    content: '';
+    display: block;
+    height: 60px;
+}
+
+body.home .res-cons .post-meta.meta-category {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    padding: 15px 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+body.home .res-cons .post-meta.meta-date {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    padding: 15px 0 15px 0;
+    text-align: right;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+body.home .res-cons .post-meta.meta-category span {
+    display: none;
+}
+
+body.home .res-cons .page-navigator {
+    grid-column: 1 / -1;
+}
+

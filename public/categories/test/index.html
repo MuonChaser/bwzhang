@@ -1,18 +1,18 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-hans">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web/style.css" />
-  <style>
-    body {
-      font-family: "LXGW WenKai Screen";
-      font-weight: normal;
-    }
-  </style>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web/style.css" />
+    <style>
+        body {
+        font-family: "LXGW WenKai Screen";
+        font-weight: normal;
+        }
+    </style>
     <title>Test | 博客于文</title>
     <meta property="og:title" content="Test - 博客于文">
     <meta property="og:type" content="article">
@@ -31,7 +31,7 @@
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
     <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/test/index.xml" title="博客于文" />
-    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 
     
     
@@ -44,7 +44,7 @@
 </head>
 
 
-<body>
+<body data-auto-sidebar-collapse="false">
     <header id="header" class="clearfix">
     <div class="container">
         <div class="col-group">
@@ -54,12 +54,15 @@
                         博客于文
                     </a>
                 
-                
+                <p class="description">博学于文，约之以礼</p>
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="" href="http://localhost:1313/">Home</a>
                     
+                    <a class="" href="http://localhost:1313/">首页</a>
+                    
+                    
+                    <button id="sidebar-toggle" class="sidebar-toggle" aria-controls="secondary" aria-expanded="true" title="隐藏/展开侧边栏">隐藏侧边栏</button>
                 </nav>
             </div>
         </div>
@@ -77,7 +80,7 @@
     <h3 class="archive-title">
         分类
         <span class="keyword">test</span>
-        articles
+        中的文章
     </h3>
     
 
@@ -90,7 +93,7 @@
         </header>
         
   <time datetime="2025-11-18T14:36:50Z" class="post-meta meta-date dt-published">
-    2025-11-18
+    2025年11月18日
   </time>
 
 
@@ -110,7 +113,7 @@ draft = false
 title = &lsquo;Second&rsquo;
 tags = [&rsquo;test&rsquo;]
 categories = [&rsquo;test']</p>……
-            <p class="readmore"><a href="http://localhost:1313/posts/second/" target="_blank">Continue reading</a></p>
+            <p class="readmore"><a href="http://localhost:1313/posts/second/" target="_blank">阅读全文</a></p>
         </div>
     </article>
     
@@ -122,7 +125,7 @@ categories = [&rsquo;test']</p>……
         </header>
         
   <time datetime="2025-11-18T13:18:04Z" class="post-meta meta-date dt-published">
-    2025-11-18
+    2025年11月18日
   </time>
 
 
@@ -137,7 +140,7 @@ categories = [&rsquo;test']</p>……
         <div class="post-content">
             <h1 id="测试">测试</h1>
 <p>$$ \sum_{i=1}^N $$</p>……
-            <p class="readmore"><a href="http://localhost:1313/posts/first/" target="_blank">Continue reading</a></p>
+            <p class="readmore"><a href="http://localhost:1313/posts/first/" target="_blank">阅读全文</a></p>
         </div>
     </article>
     
@@ -174,6 +177,7 @@ categories = [&rsquo;test']</p>……
 
 
 
+
                 </div>
 
                 <div id="secondary">
@@ -187,8 +191,15 @@ categories = [&rsquo;test']</p>……
     </section>
 
     <section class="widget">
-        <h3 class="widget-title">Latest articles</h3>
+        <h3 class="widget-title">最近文章</h3>
 <ul class="widget-list">
+    <li>
+        <a href="http://localhost:1313/posts/math/kl/" title="KL散度" target="_blank">KL散度</a>
+    </li>
+    
+    <li>
+        <a href="http://localhost:1313/posts/math/inequity/" title="概率论中的常见不等式" target="_blank">概率论中的常见不等式</a>
+    </li>
     
     <li>
         <a href="http://localhost:1313/posts/second/" title="Second" target="_blank">Second</a>
@@ -204,16 +215,18 @@ categories = [&rsquo;test']</p>……
     
 
     <section class="widget">
-        <h3 class="widget-title"><a href='/categories/'>Categories</a></h3>
+        <h3 class="widget-title"><a href='/categories/'>分类</a></h3>
 <ul class="widget-list">
     
     <li><a href="http://localhost:1313/categories/test/">Test (2)</a></li>
+    
+    <li><a href="http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记 (1)</a></li>
     
 </ul>
     </section>
 
     <section class="widget">
-        <h3 class="widget-title"><a href='/tags/'>Tags</a></h3>
+        <h3 class="widget-title"><a href='/tags/'>标签</a></h3>
 <div class="tagcloud">
     
     <a href="http://localhost:1313/tags/test/">Test</a>
@@ -224,9 +237,9 @@ categories = [&rsquo;test']</p>……
     
 
     <section class="widget">
-        <h3 class="widget-title">Meta</h3>
+        <h3 class="widget-title">其它</h3>
         <ul class="widget-list">
-            <li><a href="http://localhost:1313/index.xml">RSS</a></li>
+            <li><a href="http://localhost:1313/index.xml">文章 RSS</a></li>
         </ul>
     </section>
 </div>

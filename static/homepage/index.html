@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="4SLe_2pXughppsf7blKlJOfjBpelRRxUSDESOt3j00s" />
+    <meta name="msvalidate.01" content="4803F4642D156E2915B8F25668569F1C" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Bowen Zhang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>BOWEN ZHANG | 张博文</h1>
+                <p>B.S. of Data Science at CUFE</p>
+            </div>
+            <div class="header-right">
+                <img src="images/logo1.jpg" alt="Institution Logo" class="logo">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://blog.bwzhang.cn">Blog</a></li>
+                <li><a href="index.html#Working Papers">Working Papers</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="index.html#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </br>
+    </header>
+    <main>
+        <section id="about">
+            <div class="about-container">
+                <div class="about-text">
+                    <h3><u>ABOUT ME</u></h3>
+                    <p>
+                        Hello — I'm a bachelor student majoring in Data Science at the School of Infomation, Central University of Finance and Economics.
+                        My interests include data analysis, machine learning, and their applications in finance.
+                        I'm learning modern statistical methods, Python, and practical data workflows, and I'm open to collaboration and discussion.
+                    </br>
+                    </br>
+                    </p>
+                </div>
+                <div class="about-photo">
+                    <img src="images/bowen_photo.jpg" alt="Bowen Zhang Photo" class="profile-pic">
+                </div>
+            </div>
+        </section>
+        </br>
+        </br>
+
+        <section id="Working Papers">
+            <div class="section-header">
+                <h2>WORKING PAPERS</h2>
+            </div>
+            <div class="publication-list">
+                <div class="publication-item">
+                    <h3>Projects & Coursework</h3>
+                    <p>Placeholder for projects, course work, and student research. Replace with your links or descriptions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <div class="section-header">
+                <h2>PUBLICATIONS</h2>
+            </div>
+            <div class="publication-list">
+                <div class="publication-item">
+                    <h3>Undergraduate Projects</h3>
+                    <p>List your reports, GitHub repos, or preprints here.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact">
+            <div class="section-header">
+                <div class="content-container">
+                    <h2>Contact</h2>
+                    <p>
+                        Bowen Zhang<br>
+                        Central University of Finance and Economics<br>
+                        No. 39 South Xueyuan Road, Beijing, China, 100081<br>
+                        b.zhang@email.cufe.edu.cn
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.abstract-toggle');
+
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const abstractId = this.getAttribute('data-target');
+                    const abstractFull = document.getElementById(abstractId);
+                    const abstractPreview = document.querySelector(`[data-preview="${abstractId}"]`);
+
+                    if (abstractFull.style.display === 'block') {
+                        abstractFull.style.display = 'none';
+                        abstractPreview.style.display = 'inline';
+                        this.textContent = 'Read more';
+                    } else {
+                        abstractFull.style.display = 'block';
+                        abstractPreview.style.display = 'none';
+                        this.textContent = 'Show less';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
