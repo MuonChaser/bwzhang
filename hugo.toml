@@ -42,11 +42,11 @@ buildExpired = false
   [params.profileMode]
     enabled = true
     title = 'Bowen Zhang'
-    subtitle = '博学于文，约之以礼 | 中央财经大学 · 金融数学 · 27届'
+    subtitle = '博学于文，约之以礼
     imageUrl = 'images/avatar.svg'
     imageWidth = 120
     imageHeight = 120
-    imageTitle = 'Bowen Zhang'
+    imageTitle = '张博文'
 
     [[params.profileMode.buttons]]
       name = '个人主页'
@@ -63,7 +63,7 @@ buildExpired = false
 
   [[params.socialIcons]]
     name = 'linkedin'
-    url = 'https://www.linkedin.com/in/'   # TODO: 填入你的 LinkedIn 用户名
+    url = 'https://www.linkedin.com/in/zhangbowen'
 
   [[params.socialIcons]]
     name = 'rss'
