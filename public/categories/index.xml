@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on 博客于文</title>
-    <link>http://blog.bwzhang.cn/categories/</link>
+    <link>https://zbw.uk/categories/</link>
     <description>Recent content in Categories on 博客于文</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-hans</language>
     <lastBuildDate>Fri, 28 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.bwzhang.cn/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zbw.uk/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>学习笔记</title>
-      <link>http://blog.bwzhang.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>https://zbw.uk/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://blog.bwzhang.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://zbw.uk/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
     </item>
     <item>
       <title>金融</title>
-      <link>http://blog.bwzhang.cn/categories/%E9%87%91%E8%9E%8D/</link>
+      <link>https://zbw.uk/categories/%E9%87%91%E8%9E%8D/</link>
       <pubDate>Tue, 25 Nov 2025 16:08:47 +0800</pubDate>
-      <guid>http://blog.bwzhang.cn/categories/%E9%87%91%E8%9E%8D/</guid>
+      <guid>https://zbw.uk/categories/%E9%87%91%E8%9E%8D/</guid>
       <description></description>
     </item>
   </channel>
