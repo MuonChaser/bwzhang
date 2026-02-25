@@ -1,21 +1,75 @@
 baseURL = 'http://blog.bwzhang.cn/'
 defaultContentLanguage = "zh-hans"
 title = '博客于文'
-theme = 'maupassant'
+theme = 'PaperMod'
 hasCJKLanguage = true
 summaryLength = 10
+[pagination]
+  pagerSize = 10
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
 
-# 全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能
-toc = true  # 是否开启目录
-# 是否启用自动折叠侧边栏（默认为 false）
-autoSidebarCollapse = false
-[author]
-  name = 'Bowen Zhang'
+[minify]
+  disableXML = true
+  minifyOutput = true
 
 [params]
   author = 'Bowen Zhang'
-  subtitle = '博学于文，约之以礼'
-  description = 'B.S. at CUFE 27'
-  customCSS = ['style.css']
+  description = '博学于文，约之以礼 | B.S. at CUFE 27'
+  defaultTheme = 'auto'          # auto / light / dark
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = true
 
+  [params.homeInfoParams]
+    Title = '博客于文'
+    Content = '博学于文，约之以礼 | 数学 · 金融 · 计算机'
 
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/MuonChaser'
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  series = 'series'
+
+[menu]
+  [[menu.main]]
+    identifier = 'posts'
+    name = '文章'
+    url = '/posts/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'categories'
+    name = '分类'
+    url = '/categories/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'tags'
+    name = '标签'
+    url = '/tags/'
+    weight = 30
+  [[menu.main]]
+    identifier = 'search'
+    name = '搜索'
+    url = '/search/'
+    weight = 40
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
