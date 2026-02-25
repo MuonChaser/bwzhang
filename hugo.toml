@@ -42,7 +42,7 @@ buildExpired = false
   [params.profileMode]
     enabled = true
     title = 'Bowen Zhang'
-    subtitle = '博学于文，约之以礼
+    subtitle = '博学于文，约之以礼'
     imageUrl = 'images/avatar.svg'
     imageWidth = 120
     imageHeight = 120
