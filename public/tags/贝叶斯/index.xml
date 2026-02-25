@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>贝叶斯 on 博客于文</title>
-    <link>https://zbw.uk/tags/%E8%B4%9D%E5%8F%B6%E6%96%AF/</link>
+    <link>https://blog.zbw.uk/tags/%E8%B4%9D%E5%8F%B6%E6%96%AF/</link>
     <description>Recent content in 贝叶斯 on 博客于文</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-hans</language>
     <lastBuildDate>Fri, 28 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://zbw.uk/tags/%E8%B4%9D%E5%8F%B6%E6%96%AF/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.zbw.uk/tags/%E8%B4%9D%E5%8F%B6%E6%96%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>共轭先验</title>
-      <link>https://zbw.uk/posts/math/%E8%B4%9D%E5%8F%B6%E6%96%AF-%E5%85%B1%E8%BD%AD%E5%85%88%E9%AA%8C/</link>
+      <link>https://blog.zbw.uk/posts/math/%E8%B4%9D%E5%8F%B6%E6%96%AF-%E5%85%B1%E8%BD%AD%E5%85%88%E9%AA%8C/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://zbw.uk/posts/math/%E8%B4%9D%E5%8F%B6%E6%96%AF-%E5%85%B1%E8%BD%AD%E5%85%88%E9%AA%8C/</guid>
+      <guid>https://blog.zbw.uk/posts/math/%E8%B4%9D%E5%8F%B6%E6%96%AF-%E5%85%B1%E8%BD%AD%E5%85%88%E9%AA%8C/</guid>
       <description>&lt;p&gt;共轭先验（conjugate prior）是贝叶斯统计中的一个重要概念，使得后验分布与先验分布具有相同的函数形式，大大简化了贝叶斯推断的计算。&lt;/p&gt;</description>
     </item>
     <item>
       <title>尺度与位置参数</title>
-      <link>https://zbw.uk/posts/math/%E8%B4%9D%E5%8F%B6%E6%96%AF-%E5%B0%BA%E5%BA%A6%E4%B8%8E%E4%BD%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E6%97%8F/</link>
+      <link>https://blog.zbw.uk/posts/math/%E8%B4%9D%E5%8F%B6%E6%96%AF-%E5%B0%BA%E5%BA%A6%E4%B8%8E%E4%BD%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E6%97%8F/</link>
       <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://zbw.uk/posts/math/%E8%B4%9D%E5%8F%B6%E6%96%AF-%E5%B0%BA%E5%BA%A6%E4%B8%8E%E4%BD%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E6%97%8F/</guid>
+      <guid>https://blog.zbw.uk/posts/math/%E8%B4%9D%E5%8F%B6%E6%96%AF-%E5%B0%BA%E5%BA%A6%E4%B8%8E%E4%BD%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E6%97%8F/</guid>
       <description>&lt;p&gt;某些有特殊性质的概率分布族被称为位置参数族（location family）和尺度参数族（scale family），能够简化计算。&lt;/p&gt;</description>
     </item>
   </channel>

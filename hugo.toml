@@ -1,4 +1,4 @@
-baseURL = 'https://zbw.uk/'
+baseURL = 'https://blog.zbw.uk/'
 defaultContentLanguage = "zh-hans"
 title = '博客于文'
 theme = 'PaperMod'
@@ -49,24 +49,8 @@ buildExpired = false
     imageTitle = 'Bowen Zhang'
 
     [[params.profileMode.buttons]]
-      name = '文章'
-      url = '/posts/'
-
-    [[params.profileMode.buttons]]
       name = '个人主页'
       url = 'https://zbw.uk'
-
-    [[params.profileMode.buttons]]
-      name = '标签'
-      url = '/tags/'
-
-    [[params.profileMode.buttons]]
-      name = '分类'
-      url = '/categories/'
-
-    [[params.profileMode.buttons]]
-      name = '归档'
-      url = '/archives/'
 
   # 社交图标
   [[params.socialIcons]]
