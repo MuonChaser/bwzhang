@@ -17,6 +17,15 @@ buildExpired = false
   disableXML = true
   minifyOutput = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$'], ['\[', '\]']]
+          inline = [['$', '$'], ['\(', '\)']]
+
 [params]
   author = 'Bowen Zhang'
   description = '博学于文，约之以礼 | B.S. at CUFE 27'
@@ -37,6 +46,7 @@ buildExpired = false
   hideSummary = false
   showtoc = true
   tocopen = true
+  math = true
 
   # Profile 模式主页
   [params.profileMode]

@@ -43,11 +43,7 @@
       <pubDate>Sun, 23 Nov 2025 19:36:43 +0800</pubDate>
       <guid>https://blog.zbw.uk/posts/math/kl/</guid>
       <description>&lt;p&gt;KL 散度（KL Divergence），是衡量两个概率分布之间差异的一种非对称度量。对分布 $P(x)$ 和 $Q(x)$，KL 散度可以被理解为按照 $P(x)$ 或 $Q(x)$ 加权的对数似然比的期望值：
-$$ D_{KL}(P || Q) = \mathbb{E}&lt;em&gt;{x \sim P} \left[ \log \frac{P(x)}{Q(x)} \right] $$
-对于离散分布，KL 散度定义为：
-$$ \sum&lt;/em&gt;{x} P(x) \log \frac{P(x)}{Q(x)} $$
-对于连续分布，KL 散度定义为：
-$$ \int P(x) \log \frac{P(x)}{Q(x)} dx $$&lt;/p&gt;</description>
+&lt;/p&gt;</description>
     </item>
     <item>
       <title>概率论中的常见不等式</title>
@@ -56,7 +52,7 @@ $$ \int P(x) \log \frac{P(x)}{Q(x)} dx $$&lt;/p&gt;</description>
       <guid>https://blog.zbw.uk/posts/math/inequity/</guid>
       <description>&lt;h2 id=&#34;jenson-不等式&#34;&gt;Jenson 不等式&lt;/h2&gt;
 &lt;p&gt;对于凸函数 $f$，有如下不等式成立：
-$$ E[f(X)] \geq f(E[X]) $$&lt;/p&gt;</description>
+&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
